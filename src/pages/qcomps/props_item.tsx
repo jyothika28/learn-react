@@ -1,9 +1,14 @@
 import { ItemProps } from "@/types/item";
 
+function StrikedItem({ name } : { name: string }) {
+  return <del>{name}</del>;
+}
+
 function Item({ name, isPacked } : ItemProps) {
   return (
     <li className="item">
-      {name}
+      {isPacked ? name:
+      <StrikedItem name={name} /> }
     </li>
   );
 }
