@@ -11,10 +11,15 @@ import Gallery from './qcomps/state'
 import Holder from './components/square'
 import PackingList from './qcomps/props_item'
 //import List from './components/list_plain'
-import List from './qcomps/list_keys_id'
-import RecipeList from './qcomps/recipes'
-import Form from './qcomps/stuckForm'
-import FeedbackForm from './qcomps/thankYouCrash'
+// import List from './qcomps/list_keys_id'
+// import RecipeList from './qcomps/recipes'
+// import Form from './qcomps/stuckForm'
+// import FeedbackForm from './qcomps/thankYouCrash'
+// import Counter from './qcomps/snapshot'
+import RequestTracker from './qcomps/shoppingCart'
+import Scoreboard from './qcomps/updObjectsForm'
+import List from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
 
 export default function Home() {
   return (
@@ -27,11 +32,16 @@ export default function Home() {
     
     <Holder />
     <PackingList /> */}
-    <List />
+    {/* <List />
     <RecipeList />
     <Gallery />
     <Form />
-    <FeedbackForm />
+    <FeedbackForm /> */}
+    {/* <Counter /> */}
+    <RequestTracker />
+    <Scoreboard />
+    <List />
+    <BucketList />
     </div>
   );
 }
